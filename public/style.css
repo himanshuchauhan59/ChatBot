@@ -1,0 +1,78 @@
+.userInput {
+    position: absolute;
+    width: 100%;
+    padding: 0px 15px;
+    bottom: 0px;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.707);
+}
+
+nav div p {
+    color: white;
+    font-weight: 600;
+    margin: 0px !important;
+}
+
+.userSuggetion div div {
+    border: 1px solid black;
+    margin: 10px 0px;
+    border-radius: 8px;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.userHistory {
+    height: calc(100vh - 22vh);
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.userHistory::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.userHistory {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.userSuggetion div div p {
+    margin: 0px !important;
+}
+
+.userSuggetion {
+    margin-bottom: 10px;
+}
+
+.communicationList {
+    margin-top: 10px;
+}
+
+.communicationList .form-label {
+    margin: 0px;
+    color: black;
+    font-weight: 600;
+    padding: 2px 5px;
+}
+
+.responseBox {
+    background-color: #8080801a;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+.botChatColor {
+    background-color: #090d0f2b;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-right: 4px;
+}

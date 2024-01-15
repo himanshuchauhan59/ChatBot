@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./askQuestion.js"></script>
+    <script type="module" src="./renderer.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div>
+            <p>ChatBot</p>
+        </div>
+    </nav>
+    <!-- main section for user history communication. -->
+    <main class="container-fluid">
+        <section class="userHistory">
+            <div class="communicationList" id="communicationList">
+            </div>
+        </section>
+    </main>
+
+
+    <!-- user inputs  -->
+    <div class="userInput">
+        <!-- for suggetion -->
+        <div class="row userSuggetion" style="display: none;">
+            <div class="col-12 col-sm-12">
+                <div>
+                    <p>Hi, I am ChatBot. I am here to help you.</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 ">
+                <div>
+                    <p>Just message</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 ">
+                <div>
+                    <p>Say Hi!</p>
+                </div>
+            </div>
+        </div>
+        <!-- user input for askings -->
+        <div class="input-group mb-3" style="padding: 0px;">
+            <textarea class="form-control" placeholder="Ask to Bot" id="question" rows="1"></textarea>
+            <button class="btn btn-secondary" type="button" id="askQuestion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-send-arrow-up-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15.854.146a.5.5 0 0 1 .11.54L13.026 8.03A4.5 4.5 0 0 0 8 12.5c0 .5 0 1.5-.773.36l-1.59-2.498L.644 7.184l-.002-.001-.41-.261a.5.5 0 0 1 .083-.886l.452-.18.001-.001L15.314.035a.5.5 0 0 1 .54.111M6.637 10.07l7.494-7.494.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154z" />
+                    <path fill-rule="evenodd"
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <button type="submit" id="askQuestion" onclick="askQuestion()">Ask</button> -->
+</body>
+
+</html>
